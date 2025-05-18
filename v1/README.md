@@ -26,4 +26,4 @@ Arguments:
 `./catpng <filepaths...>`
 
 Arguments:
-    `<filepaths...>` A space seperated list of exact PNG file paths to concatenate. Need a minimum of 2 paths. (Yes this may be a little tedious)
+- `<filepaths...>` A space seperated list of exact PNG file paths to concatenate. Need a minimum of 2 paths. (Yes this may be a little tedious)
