@@ -11,7 +11,7 @@ The `paster` utility retrieves fragmented PNG images from a web server, assemble
 - **PNG assembly**: Reconstructs the complete image from fragments using PNG manipulation utilities
 
 ## How to run
-Please note this has been tested on Unix-based systems. Windows compatibility may vary.
+Please note this has been tested on Unix-based systems. Windows compatibility may vary. Note: You must be connected to the `eceubuntu.uwaterloo` server.
 
 1. CD into `/v2/png_util2`.
 2. Run the `make` command to ensure everything is compiled for your OS.
@@ -19,3 +19,10 @@ Please note this has been tested on Unix-based systems. Windows compatibility ma
 4. Run the `make` command.
 
 ## Usage
+`./paster [OPTIONS]`
+
+Options:
+
+  `-t`    How many threads the program should use. Range: [1, 999]
+  
+  `-n`    Which image from the server to fetch. Range: [1, 3]
