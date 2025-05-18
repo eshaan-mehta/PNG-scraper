@@ -17,3 +17,14 @@ The `paster` utility retrieves fragmented PNG images from a web server, assemble
 - **Thread synchronization**: Uses mutexes to safely handle shared data across threads
 - **HTTP data retrieval**: Uses libcurl to fetch image fragments from a remote server
 - **PNG assembly**: Reconstructs the complete image from fragments using PNG manipulation utilities
+
+## Version 3
+The `paster2` utility retrieves fragmented PNG images from a web server using a producer-consumer architecture with shared memory. It efficiently assembles image strips in the correct order, and stitches them together to create a complete image. Key features include:
+
+- **Multi-process architecture**: Uses separate producer and consumer processes
+- **Producer-Consumer pattern**: Implements a bounded buffer using shared memory
+- **Process synchronization**: Uses semaphores and mutexes for coordination
+- **Ring buffer implementation**: Efficient shared memory data structure for strip storage
+- **Configurable parameters**: Customize buffer size, process counts, and processing delay
+- **HTTP data retrieval**: Uses libcurl to fetch image fragments from a remote server
+- **PNG assembly**: Reconstructs the complete image from fragments using PNG manipulation utilities
