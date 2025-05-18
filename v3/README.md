@@ -1,4 +1,4 @@
-# PNG Assembler Version 3
+# PNG Concatenator Version 3
 This version introduces a multi-process image retrieval and assembly tool: `./paster2`.
 
 ## Overview
@@ -21,3 +21,11 @@ Please note this has been tested on Unix-based systems. Windows compatibility ma
 4. Run the `make` command.
 
 ## Usage
+`./paster2 <b> <p> <c> <x> <n>`
+
+Arguments
+- `<b>` Bounded Buffer Size. How many image strips can the buffer hold. Range [1,50]
+- `<p>` Number of Producer processes. Range [1,20]
+- `<c>` Number of Consumer processes. Range [1,20]
+- `<x>` Consumer delay. Time in miliseconds after receiving a file, the consumer will start processing it. Range [1,1000]
+- `<n>` Image to fetch from the server [1,3]
