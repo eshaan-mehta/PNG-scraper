@@ -1,5 +1,6 @@
 # PNG Scraper and Concatenator
 These are all the versions of my PNG Scaper and Concatenator. I built this to dive into the world of systems programming, which I find really interesting :)
+
 Here is an overview of each of the versions:
 
 ## Version 1
