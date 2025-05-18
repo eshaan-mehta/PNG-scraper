@@ -1,2 +1,2 @@
-# PNG-scraper
-All the iterations of my systems png scraper. Fetches strips of a PNG image from a dedicated server and concatenates them together. Later iterations utilize multiple threads and processes to more efficiently merge chunks
+University of Waterloo ECE252 Systems Programming and Concurrency Lab Starter Files.
+You will use this code and expand on it in your lab.
